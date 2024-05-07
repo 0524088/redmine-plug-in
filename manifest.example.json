@@ -1,0 +1,37 @@
+{
+    "manifest_version": 3,
+    "name": "redmine script",
+    "description": "redmine 插件",
+    "version": "1.0.0",
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "action": {
+        "default_icon": "icon.png"
+    },
+    "permissions": [
+        "activeTab",
+        "webRequest"
+    ],
+    "content_scripts": [{
+        "matches": [
+            "{redmine domain}/issues/*"
+        ],
+        "js": [
+            "Content.js"
+        ],
+        "run_at": "document_end"
+    }],
+    "web_accessible_resources": [{
+        "resources": [
+            "Injection.js",
+            "ShareFunctions.js",
+            "Nav.js",
+            "navItems.json",
+            "others.json"
+        ],
+        "matches": ["<all_urls>"]
+    }]
+}

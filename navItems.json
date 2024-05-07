@@ -1,0 +1,29 @@
+{
+    "pasteSpecificText": {
+        "description": "貼上特定文字",
+        "attribute": "dropdown",
+        "icon": "https://cdn-icons-png.flaticon.com/128/10882/10882044.png",
+        "items": [
+            {
+                "name": "main",
+                "description": "貼上 main 更新日期",
+                "function": "pasteMain"
+            },
+            {
+                "name": "release",
+                "description": "貼上 release 更新日期",
+                "function": "pasteRelease"
+            },
+            {
+                "name": "demo",
+                "description": "貼上 demo 站台網址",
+                "function": "pasteDemoUrl"
+            },
+            {
+                "name": "rain",
+                "description": "貼上 rain 站台網址",
+                "function": "pasteDemoRain"
+            }
+        ]
+    }
+}
