@@ -17,7 +17,8 @@
     ],
     "content_scripts": [{
         "matches": [
-            "{redmine domain}/issues/*"
+            "{redmine domain}/issues/*",
+            "{redmine domain}/projects/*/issues/new"
         ],
         "js": [
             "Content.js"
